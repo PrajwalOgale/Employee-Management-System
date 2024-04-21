@@ -1,0 +1,74 @@
+// Employee related api's ------------->
+
+POST http://localhost:3001/register
+Content-Type: application/json
+
+{
+    "email":"johncena@gmail.com",
+    "first_name":"prajwal",
+    "last_name":"ogle",
+    "password":"pppp",
+    "dept_name": "finance",
+    "is_admin":false
+}
+
+###
+
+POST http://localhost:3001/login
+Content-Type: application/json
+
+{
+    "email":"prajwal@gmail.com",
+    "password":"ppp"
+}
+
+###
+
+GET http://localhost:3001/employees/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByYWpsQGdtYWlsLmNvbSIsImlkIjo0LCJpYXQiOjE3MTExODg4MzV9.f7cvAXttGe-pQt0zy7RWuyBGe9katnw7XVOIq2CuwR0
+
+###
+
+GET http://localhost:3001/employee
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByYWpsQGdtYWlsLmNvbSIsImlkIjo0LCJpYXQiOjE3MTExODg4MzV9.f7cvAXttGe-pQt0zy7RWuyBGe9katnw7XVOIq2CuwR0
+
+###
+
+GET http://localhost:3001/employees
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByYWpsQGdtYWlsLmNvbSIsImlkIjo0LCJpYXQiOjE3MTExODg4MzV9.f7cvAXttGe-pQt0zy7RWuyBGe9katnw7XVOIq2CuwR0
+
+###
+PUT http://localhost:3001/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByYWpsQGdtYWlsLmNvbSIsImlkIjo0LCJpYXQiOjE3MTEyNjMzMjV9.xZtgXikhTw9pwhmZpvDZ9wPeZSWN1_kpm7g5dqwsFcw
+
+{
+    "email":"prajl@gmail.com",
+    "first_name":"Sunillll",
+    "last_name":"ogle",
+    "password":"ssss"
+}
+
+
+
+
+
+
+//Department related api's ------------->
+
+###
+
+POST http://localhost:3001/add_department
+Content-Type: application/json
+
+{
+    "dept_name":"finance"
+}
+
+###
+
+GET http://localhost:3001/departments
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByYWpsQGdtYWlsLmNvbSIsImlhdCI6MTcxMDkzMDQ4OH0.fpQk46g6rjUqgYxSBJQcB2YqlbgiT_lWu8aFjbtzGYs
+
+
+
